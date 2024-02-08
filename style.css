@@ -1,0 +1,298 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Light.ttf");
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* height: 100vh; */
+    /* width: 100vh; */
+}
+
+.side-bar {
+    width: 250px;
+    /* height: 100vh; */
+    flex-shrink: 0;
+    background-color: #1992D4;
+}
+
+
+
+.logo-text {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 20px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+}
+
+
+
+.logo-text>span {
+
+    font-size: 40px;
+
+}
+
+.side-bar-items {
+    padding-top: 40px;
+}
+
+.side-bar-item {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 0px 0px 0px 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "Roboto";
+    padding-bottom: 13px;
+}
+
+.side-bar-item>span {
+
+    font-size: 22px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+}
+
+.header {
+    padding: 10px 30px 20px 30px;
+    height: fit-content;
+
+    /* color: #aaa; */
+    box-shadow: 0px 2px 5px 1px #aaa;
+}
+
+.search-banner {
+    display: flex;
+    width: calc(100vw - 350px);
+    align-items: space-between;
+
+}
+
+.search-banner input {
+    flex: 1;
+    max-width: 500px;
+    background-color: #E2E8F0;
+    border-radius: 14px;
+    border-width: 0;
+    height: 25px;
+}
+
+
+#search-icon {
+    font-size: 20px;
+}
+
+.flex-collection {
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.search-banner>.flex-collection:nth-child(1) {
+
+    flex: 3;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.user-name {
+    font-weight: bold;
+
+    /* font-family: "Roboto"; */
+}
+
+.search-banner>.flex-collection:nth-child(2) {
+    padding-left: 70px;
+    flex: 2;
+    justify-content: end;
+}
+
+.preview-banner {
+    display: flex;
+    padding-top: 14px;
+
+}
+
+.preview-banner>.flex-collection:nth-child(1) {
+    flex: 3;
+}
+
+.preview-banner>.flex-collection:nth-child(2) {
+    padding-left: 70px;
+    flex: 2;
+    justify-content: end;
+}
+
+button {
+    background-color: #1992D4;
+    border: 0;
+    color: white;
+    padding: 7px 14px 7px 14px;
+    border-radius: 15px;
+
+}
+
+.greeting {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.greeting>span {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.content {
+    background-color: #E2E8F0;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    grid-template-rows: 1fr 1fr;
+    /* row-gap: 20px; */
+    /* column-gap: 20px; */
+}
+
+.projects>h4 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.projects {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    padding-left: 20px;
+
+
+}
+
+.trending {
+    grid-column: 3/3;
+    grid-row: 2/3;
+    font-family: "Roboto";
+
+}
+
+.trending>h4 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.announcements {
+    font-family: "Roboto";
+
+    grid-column: 3/3;
+    grid-row: 1/2;
+
+}
+
+.announcements>h4 {
+    font-family: "Roboto";
+
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.card {
+    background-color: white;
+    border: 0;
+    padding: 15px 14px 15px 14px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px #d8d4d4;
+    margin-top: 10px;
+}
+
+.trending-item {
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.trending-item>span {
+    font-weight: 700;
+}
+
+.trending-item>span>span {
+    font-weight: 100;
+}
+
+.announcement-item>p {
+    font-weight: bold;
+}
+
+.announcement-item>span {
+    font-size: small;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
+.projects-grid-container>.card {
+    height: 200px;
+    border-left: 10px solid #F0B429;
+}
+
+
+.projects-grid-container {
+    display: grid;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.projects-grid-container>.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: #636363;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.project-title {
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+
+}
